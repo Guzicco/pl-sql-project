@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E19CE799-2248-A971-F0BA-E9E9682E824A" name="Tickets">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:55:00 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="047E3003-D98D-42CD-34C1-3C7E40FEB260">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:55:54 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Typ_zgloszenia" id="5E65B252-4E95-E0AA-E0A3-48C545BF6552">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:02:51 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3BB3ADAD-05B8-67C4-3C97-B98ACF23578C" referredColumn="316BE7CF-7247-33CE-B740-434A5CF714DA"/>
+</associations>
+</Column>
+<Column name="Opis" id="11CCADCE-0F7F-1737-DA13-3801DA6D13B5">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:01:44 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zglaszajacy" id="AF19A61E-5975-BA7F-30A3-21177738B4A6">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:57:34 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80EB4D64-255D-BDE6-9269-5E0DE6CF06C9" referredColumn="ACABB0C9-2F5A-CA71-77C4-E0FF465F51BD"/>
+</associations>
+</Column>
+<Column name="Pracownik" id="B88D2E16-E1E1-8DF4-100C-1971DF47935F">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:00:21 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="676A7CC6-6E50-31E0-27F3-9E3A3072AFEB" referredColumn="B51FF63F-CF7C-26C1-C749-844BD61AD8CC"/>
+</associations>
+</Column>
+<Column name="Zakonczone" id="E4D92112-3593-1EC4-0B50-631E033EBDD6">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:01:14 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71BF2D78-9BFE-2DEE-121E-D33BC7DCBD84" name="Tickets_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:55:54 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="047E3003-D98D-42CD-34C1-3C7E40FEB260"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D424105-D061-9C69-91DA-D91BB0845A0E" name="Tickets_Klient_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:57:34 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF19A61E-5975-BA7F-30A3-21177738B4A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C4763C0-09B6-6B7A-C462-A5C864613F1A" name="Tickets_Pracownicy_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:00:21 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B88D2E16-E1E1-8DF4-100C-1971DF47935F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2772BAB3-20DA-58EF-E1B4-0ABC53063367" name="Tickets_Typ_awarii_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:02:51 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E65B252-4E95-E0AA-E0A3-48C545BF6552"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

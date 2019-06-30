@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31155EE2-80C0-4403-BF13-9A83632F8700" name="Pracownicy">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:57:48 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B51FF63F-CF7C-26C1-C749-844BD61AD8CC">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:58:13 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwisko" id="9E74FAF1-69B0-2F80-450B-BE91BF8BAE1D">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:58:13 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Imie" id="DE987ACE-C340-1165-49A8-1AB1E9F2E4F7">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:58:28 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESEL" id="C26A72FB-C796-8290-542A-E0555941995C">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:58:53 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefon" id="FE1A6A08-1F1B-E2E8-0DB4-2A2ADBEFB749">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:59:24 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stanowisko_ID" id="DC875406-788B-C46C-AEB1-5E06998AFEAA">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:53:03 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28E86A02-BB01-69E5-BEDF-B92F9CA7DD27" referredColumn="57526955-6D60-14B3-F1EC-8DB0ED5F00B2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E1052BC-E6D9-8E7B-7EA1-2BBE1B2A8F30" name="Pracownicy_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:58:13 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B51FF63F-CF7C-26C1-C749-844BD61AD8CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6C8E131-8A57-C101-B26C-A26B8BAF0784" name="Pracownicy__UN">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:30:45 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C26A72FB-C796-8290-542A-E0555941995C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="412C403E-4EB3-2C30-66AA-A71D62AF8239" name="Pracownicy_Stanowisko_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:53:03 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC875406-788B-C46C-AEB1-5E06998AFEAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

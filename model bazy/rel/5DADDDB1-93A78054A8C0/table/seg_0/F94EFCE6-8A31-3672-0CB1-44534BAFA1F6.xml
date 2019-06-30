@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F94EFCE6-8A31-3672-0CB1-44534BAFA1F6" name="Telewizja">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:47:29 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A0255151-2081-CE5C-C539-DB7157C346AA">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:48:05 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="D4B69205-D6D2-DDB9-E676-174927636AA3">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:59:10 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pakiet_1" id="5309D2DE-4AB2-73F1-CD72-39B18B88509D">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:21:57 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pakiet_2" id="223FB42C-D542-A318-A0DB-5611950DB7D8">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:22:08 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pakiet_3" id="41AAD512-9262-84C4-A06A-FFD061C4CF4A">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:22:17 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63EDDFD0-B86E-D7C6-2F8A-F3832791C592" name="Telewizja_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:48:05 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0255151-2081-CE5C-C539-DB7157C346AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

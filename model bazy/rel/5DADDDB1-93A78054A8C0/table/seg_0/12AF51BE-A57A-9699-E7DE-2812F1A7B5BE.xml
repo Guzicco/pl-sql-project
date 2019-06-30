@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12AF51BE-A57A-9699-E7DE-2812F1A7B5BE" name="Routery">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:59:16 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3EA2B8A9-1CDB-74CA-FB73-346F385A6FD7">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:00:26 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_Routery_ID</notNullConstraintName>
+</Column>
+<Column name="Marka" id="02540206-5B6B-B6D6-C1A7-7C265911EA1F">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:02:20 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Model" id="A6D50A8B-CA09-929C-98D7-8D19DA7DEE35">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:02:20 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_seryjny" id="75CB4865-2714-F9C0-E0EC-6831DA6CC043">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:03:04 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adres_MAC" id="BE109A96-789F-BDB8-C43D-B4612014014A">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:00:26 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IP" id="BFCE55D5-12D3-541C-61BE-891B01BC7CAB">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:16:05 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Klient_ID" id="2C17E908-7AC9-79F9-CB8E-ED279FD7EC78">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:01:45 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_Routery_Klient</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="45A66DD5-269D-36E2-BEA0-80C557F5E3FB" referredColumn="ACABB0C9-2F5A-CA71-77C4-E0FF465F51BD"/>
+</associations>
+</Column>
+<Column name="Routing" id="FDE96603-4364-F8A7-D47A-EB13D15A3297">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:12:53 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51E4C97F-A4A0-7221-A605-7C6A04C99426" referredColumn="3EA2B8A9-1CDB-74CA-FB73-346F385A6FD7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D58C6BE-7BCB-D702-A677-3435E7C7FF76" name="Routery_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:00:26 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EA2B8A9-1CDB-74CA-FB73-346F385A6FD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EEDC9FAD-D19C-577E-6455-646AFA182B41" name="Routery__UN">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:31:07 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE109A96-789F-BDB8-C43D-B4612014014A"/>
+<colUsage columnID="75CB4865-2714-F9C0-E0EC-6831DA6CC043"/>
+<colUsage columnID="BFCE55D5-12D3-541C-61BE-891B01BC7CAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEE07BD8-12D7-86D0-1A6B-D4C915F730FC" name="Routery_Klient_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:01:45 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C17E908-7AC9-79F9-CB8E-ED279FD7EC78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E357BC41-DDFE-979D-12B7-D8435026DB52" name="Routery_Routery_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:12:53 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDE96603-4364-F8A7-D47A-EB13D15A3297"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

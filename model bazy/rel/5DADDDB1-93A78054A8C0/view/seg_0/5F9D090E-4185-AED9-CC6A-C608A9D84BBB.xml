@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="5F9D090E-4185-AED9-CC6A-C608A9D84BBB" name="Otwarte_zgloszenia">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:46:21 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>view_7</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL>SELECT&lt;br/&gt;    tickets.id                 AS id,&lt;br/&gt;    tickets.opis               AS opis,&lt;br/&gt;    pracownicy.imie&lt;br/&gt;    || &apos; &apos;&lt;br/&gt;    || pracownicy.nazwisko AS pracownik,&lt;br/&gt;    typ_zgloszenia.typ         AS typ,&lt;br/&gt;    typ_zgloszenia.priorytet   AS priorytet&lt;br/&gt;FROM&lt;br/&gt;    tickets&lt;br/&gt;    INNER JOIN typ_zgloszenia ON typ_zgloszenia.id = tickets.typ_zgloszenia&lt;br/&gt;    INNER JOIN pracownicy ON pracownicy.id = tickets.pracownik&lt;br/&gt;WHERE&lt;br/&gt;    tickets.zakonczone = &apos;f&apos;&lt;br/&gt;GROUP BY&lt;br/&gt;    typ_zgloszenia.priorytet</userDefinedSQL>
+<parsed>true</parsed>
+<usedContainers>
+<container containerID="11CE8061-E084-42B0-185E-81EA979FC7B0"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="CC5131AA-D963-D752-B98E-F5C71C1B6FC2">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:49:37 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>id</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>047E3003-D98D-42CD-34C1-3C7E40FEB260</referencedColumn>
+<table>E19CE799-2248-A971-F0BA-E9E9682E824A</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="opis" id="23E80CEC-FCE9-F271-38E6-CF9DC0E8BA55">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:49:37 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>opis</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>11CCADCE-0F7F-1737-DA13-3801DA6D13B5</referencedColumn>
+<table>E19CE799-2248-A971-F0BA-E9E9682E824A</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pracownik" id="D7E747F0-F76C-54D4-9061-27FA8B9080DC">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:49:37 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>pracownik</alias>
+<dataType>INTEGER</dataType>
+<expression>Pracownicy.Imie || &apos; &apos; || Pracownicy.Nazwisko</expression>
+<reference>false</reference>
+<referencedColumn>B88D2E16-E1E1-8DF4-100C-1971DF47935F</referencedColumn>
+<table>E19CE799-2248-A971-F0BA-E9E9682E824A</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="typ" id="05D1FAE7-15B2-BFD3-8863-5687116584CF">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:49:37 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>typ</alias>
+<dataType>VARCHAR2</dataType>
+<expression>typ_zgloszenia.typ</expression>
+<reference>false</reference>
+<referencedColumn>D807CF51-B496-ADA7-0405-5437DD3593E4</referencedColumn>
+<table>11CE8061-E084-42B0-185E-81EA979FC7B0</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="priorytet" id="3D85D1E3-3D31-8AFE-7FE3-DEE5E59D87C0">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:49:37 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>priorytet</alias>
+<dataType>INTEGER</dataType>
+<expression>typ_zgloszenia.priorytet</expression>
+<reference>false</reference>
+<referencedColumn>E58394C3-01CE-B9DD-C9FA-4FEA747BDF26</referencedColumn>
+<table>11CE8061-E084-42B0-185E-81EA979FC7B0</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E19CE799-2248-A971-F0BA-E9E9682E824A">
+<container>true</container>
+<tableName>Tickets</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="31155EE2-80C0-4403-BF13-9A83632F8700">
+<container>true</container>
+<tableName>Pracownicy</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="11CE8061-E084-42B0-185E-81EA979FC7B0">
+<container>true</container>
+<tableName>Typ_zgloszenia</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="047E3003-D98D-42CD-34C1-3C7E40FEB260">
+<columnName>ID</columnName>
+<tableName>Tickets</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="11CCADCE-0F7F-1737-DA13-3801DA6D13B5">
+<columnName>Opis</columnName>
+<tableName>Tickets</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DE987ACE-C340-1165-49A8-1AB1E9F2E4F7">
+<columnName>Imie</columnName>
+<tableName>Pracownicy</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9E74FAF1-69B0-2F80-450B-BE91BF8BAE1D">
+<columnName>Nazwisko</columnName>
+<tableName>Pracownicy</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D807CF51-B496-ADA7-0405-5437DD3593E4">
+<columnName>Typ</columnName>
+<tableName>Typ_zgloszenia</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E58394C3-01CE-B9DD-C9FA-4FEA747BDF26">
+<columnName>Priorytet</columnName>
+<tableName>Typ_zgloszenia</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="316BE7CF-7247-33CE-B740-434A5CF714DA">
+<columnName>ID</columnName>
+<tableName>Typ_zgloszenia</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5E65B252-4E95-E0AA-E0A3-48C545BF6552">
+<columnName>Typ_zgloszenia</columnName>
+<tableName>Tickets</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B51FF63F-CF7C-26C1-C749-844BD61AD8CC">
+<columnName>ID</columnName>
+<tableName>Pracownicy</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B88D2E16-E1E1-8DF4-100C-1971DF47935F">
+<columnName>Pracownik</columnName>
+<tableName>Tickets</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E4D92112-3593-1EC4-0B50-631E033EBDD6">
+<columnName>Zakonczone</columnName>
+<tableName>Tickets</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="ED4B67C9-1F3D-6F94-7888-DCE080F8A5AA" name="Otwarte_zgloszenia_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 15:12:38 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="CC5131AA-D963-D752-B98E-F5C71C1B6FC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

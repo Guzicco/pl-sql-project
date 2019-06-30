@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10BF864C-8C9B-0289-598A-F6D3D94F10DB" name="Uslugi">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:33:01 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="8878E560-389B-2491-9493-809349DC0905">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:33:31 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Internet_ID" id="F09727FB-3F3F-045A-07E6-50C008C23E1C">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:35:27 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E88F03C3-BDD8-7C35-5D9B-84B3C4416B14" referredColumn="ADD53B9A-0A6A-49E0-F1BE-1D1CD93CBA96"/>
+</associations>
+</Column>
+<Column name="Telewizja_ID" id="D3190D52-D741-D807-D943-E0DFEAF858A5">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:03:50 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77202DA5-3B41-0D85-3FA6-6875A223AE9E" referredColumn="A0255151-2081-CE5C-C539-DB7157C346AA"/>
+</associations>
+</Column>
+<Column name="Kwota_uslugi" id="D625C556-B12F-D964-F19A-68644B4E824B">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:34:22 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B5692BC-837B-9416-6D87-873993C4005B" name="Uslugi_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:33:31 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8878E560-389B-2491-9493-809349DC0905"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36CE2A97-7F6E-14ED-5A4B-4EE0E16F37C0" name="Uslugi_Internet_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:35:27 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F09727FB-3F3F-045A-07E6-50C008C23E1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC459D10-C506-27E5-A823-A29D6B8AE5C2" name="Uslugi_Telewizja_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:03:50 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3190D52-D741-D807-D943-E0DFEAF858A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

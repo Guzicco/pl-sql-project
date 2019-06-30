@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="B5914D6E-D314-56BD-2D2E-CDC0804ACBAD" name="Zaleglosci">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:36:23 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>view_1</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL>SELECT&lt;br/&gt;    faktury.klient_id AS klient_id,&lt;br/&gt;    klient.imie&lt;br/&gt;    || &apos; &apos;&lt;br/&gt;    || klient.nazwisko AS klient,&lt;br/&gt;    SUM(faktury.naleznosc) AS sum_naleznosc&lt;br/&gt;FROM&lt;br/&gt;    faktury&lt;br/&gt;    INNER JOIN klient ON faktury.klient_id = klient.id&lt;br/&gt;WHERE&lt;br/&gt;    faktury.czy_oplacona = &apos;f&apos;&lt;br/&gt;GROUP BY&lt;br/&gt;    faktury.klient_id</userDefinedSQL>
+<parsed>true</parsed>
+<usedContainers>
+<container containerID="1E8E16C0-FC90-F2FE-8A67-40DC276B93B9"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="klient_id" id="444957FB-ED99-67BE-5998-222A5307E345">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:46:53 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>klient_id</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>EEB8F407-D1C3-3476-B98D-EDF354923EF3</referencedColumn>
+<table>1E8E16C0-FC90-F2FE-8A67-40DC276B93B9</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="klient" id="25F540F4-3441-CD0A-858B-6193A2B30914">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 15:25:29 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>klient</alias>
+<dataType>UNKNOWN</dataType>
+<expression>Klient.Imie || &apos; &apos; || Klient.Nazwisko</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="sum_naleznosc" id="E3C45DFB-1175-A24D-6827-0444829B6F71">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:46:53 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>sum_naleznosc</alias>
+<dataType>UNKNOWN</dataType>
+<expression>Sum(Faktury.Naleznosc)</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1E8E16C0-FC90-F2FE-8A67-40DC276B93B9">
+<container>true</container>
+<tableName>Faktury</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="22ABF93D-119A-4234-8926-7C7B38075044">
+<container>true</container>
+<tableName>Klient</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EEB8F407-D1C3-3476-B98D-EDF354923EF3">
+<columnName>Klient_ID</columnName>
+<tableName>Faktury</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="43FA7A56-F80F-A449-7972-EDFE5B45F201">
+<columnName>Imie</columnName>
+<tableName>Klient</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DDC64509-82F7-1A26-1B41-E71DD86DEBC3">
+<columnName>Nazwisko</columnName>
+<tableName>Klient</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F9A21949-FD07-1F09-34F4-0629325FC85F">
+<columnName>Naleznosc</columnName>
+<tableName>Faktury</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="ACABB0C9-2F5A-CA71-77C4-E0FF465F51BD">
+<columnName>ID</columnName>
+<tableName>Klient</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="16356B51-27EE-BD9C-BC0D-401E3297FDFE">
+<columnName>Czy_oplacona</columnName>
+<tableName>Faktury</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="10C6B8EF-9A4D-D101-D52B-D86C697831B2" name="Zaleglosci_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:52:51 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="444957FB-ED99-67BE-5998-222A5307E345"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

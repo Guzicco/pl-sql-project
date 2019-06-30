@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="51E4C97F-A4A0-7221-A605-7C6A04C99426" containerWithKeyObject="12AF51BE-A57A-9699-E7DE-2812F1A7B5BE" localFKIndex="E357BC41-DDFE-979D-12B7-D8435026DB52" name="Routery_Routery_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:12:53 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<referredTableLongName>Routery</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>12AF51BE-A57A-9699-E7DE-2812F1A7B5BE</referredTableID>
+<keyObject>2D58C6BE-7BCB-D702-A677-3435E7C7FF76</keyObject>
+<referredKeyID>2D58C6BE-7BCB-D702-A677-3435E7C7FF76</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

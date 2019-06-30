@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="77202DA5-3B41-0D85-3FA6-6875A223AE9E" containerWithKeyObject="10BF864C-8C9B-0289-598A-F6D3D94F10DB" localFKIndex="CC459D10-C506-27E5-A823-A29D6B8AE5C2" name="Uslugi_Telewizja_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:03:50 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<referredTableLongName>Telewizja</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F94EFCE6-8A31-3672-0CB1-44534BAFA1F6</referredTableID>
+<keyObject>63EDDFD0-B86E-D7C6-2F8A-F3832791C592</keyObject>
+<referredKeyID>63EDDFD0-B86E-D7C6-2F8A-F3832791C592</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="ADA34334-3376-E231-DB79-0D4620D997F0" name="Ilosc_otwartych_zgloszen">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:38:31 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>view_3</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL>SELECT&lt;br/&gt;    typ_zgloszenia.typ,&lt;br/&gt;    COUNT(tickets.typ_awarii_id) AS ilosc_awarii&lt;br/&gt;FROM&lt;br/&gt;    tickets&lt;br/&gt;    INNER JOIN typ_zgloszenia ON typ_zgloszenia.id = tickets.typ_zgloszenia_id&lt;br/&gt;WHERE&lt;br/&gt;    tickets.zakonczone = &apos;f&apos;&lt;br/&gt;GROUP BY&lt;br/&gt;    typ_zgloszenia.typ</userDefinedSQL>
+<parsed>true</parsed>
+<usedContainers>
+<container containerID="11CE8061-E084-42B0-185E-81EA979FC7B0"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Typ" id="AD971CB2-46EC-9FED-163C-FACBC7E7D83D">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:42:33 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>D807CF51-B496-ADA7-0405-5437DD3593E4</referencedColumn>
+<table>11CE8061-E084-42B0-185E-81EA979FC7B0</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ilosc_awarii" id="343ED903-426C-2A62-36C6-2534DCD95385">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:42:33 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ilosc_awarii</alias>
+<dataType>UNKNOWN</dataType>
+<expression>Count(Tickets.Typ_awarii_ID)</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="11CE8061-E084-42B0-185E-81EA979FC7B0">
+<container>true</container>
+<tableName>Typ_zgloszenia</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E19CE799-2248-A971-F0BA-E9E9682E824A">
+<container>true</container>
+<tableName>Tickets</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D807CF51-B496-ADA7-0405-5437DD3593E4">
+<columnName>Typ</columnName>
+<tableName>Typ_zgloszenia</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5E65B252-4E95-E0AA-E0A3-48C545BF6552">
+<columnName>Typ_awarii_ID</columnName>
+<tableName>Tickets</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="316BE7CF-7247-33CE-B740-434A5CF714DA">
+<columnName>ID</columnName>
+<tableName>Typ_zgloszenia</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E4D92112-3593-1EC4-0B50-631E033EBDD6">
+<columnName>Zakonczone</columnName>
+<tableName>Tickets</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="12CC5D7D-1BC0-7258-EE8E-608DACE6E786" name="Ilosc_otwartych_zgloszen_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 15:12:34 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="AD971CB2-46EC-9FED-163C-FACBC7E7D83D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

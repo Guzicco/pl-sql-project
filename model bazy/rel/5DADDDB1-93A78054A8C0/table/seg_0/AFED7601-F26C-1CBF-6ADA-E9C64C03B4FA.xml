@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AFED7601-F26C-1CBF-6ADA-E9C64C03B4FA" name="Rola">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:32:08 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E7DE46E0-47B1-DCFF-9B4E-86BD0E67229C">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:32:21 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="61A2A24B-3FD7-132E-6CE1-A9F4CDF691C2">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:32:43 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E95737F-9174-3D3E-B288-C0AF81CFD896" name="Rola_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:32:21 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7DE46E0-47B1-DCFF-9B4E-86BD0E67229C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97DD1652-CB65-85D3-6FBE-3EAEEEA9D613" name="Rola__UN">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:33:41 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61A2A24B-3FD7-132E-6CE1-A9F4CDF691C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

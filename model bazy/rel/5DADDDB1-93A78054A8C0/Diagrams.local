@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="E04194D3-9B6F-BB89-4D51-56728F3C02F4" name="kablowka" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

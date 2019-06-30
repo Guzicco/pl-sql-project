@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3BB3ADAD-05B8-67C4-3C97-B98ACF23578C" containerWithKeyObject="E19CE799-2248-A971-F0BA-E9E9682E824A" localFKIndex="2772BAB3-20DA-58EF-E1B4-0ABC53063367" name="Tickets_Typ_awarii_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:02:51 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<referredTableLongName>Typ_zgloszenia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>11CE8061-E084-42B0-185E-81EA979FC7B0</referredTableID>
+<keyObject>00BE6A7F-6BC4-5348-6AB6-0E00FDB5127D</keyObject>
+<referredKeyID>00BE6A7F-6BC4-5348-6AB6-0E00FDB5127D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

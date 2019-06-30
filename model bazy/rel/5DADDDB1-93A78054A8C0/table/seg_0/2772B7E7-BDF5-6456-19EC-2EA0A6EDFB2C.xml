@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2772B7E7-BDF5-6456-19EC-2EA0A6EDFB2C" name="Kanaly_tv">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:40:30 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C8B82FC5-0B0D-8948-BE57-BCF55F428694">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:41:04 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="4220F14F-1BF9-9839-2988-1781BFA9BAF3">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:41:29 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pakiet_tv_ID" id="DBE13E9A-1249-795F-199C-67CF9F667C93">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:43:11 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="411CDEEB-CE72-08D5-760E-F8B62487896D" referredColumn="24CDEBE2-1894-2CD2-C8F0-75CF75443F7D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="53BAA941-E0A1-0586-A5DD-563A05358526" name="Kanaly_tv_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:41:04 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8B82FC5-0B0D-8948-BE57-BCF55F428694"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A57E3C81-80C4-8708-3030-9F47CDC6E184" name="Kanaly_tv__UN">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:31:20 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4220F14F-1BF9-9839-2988-1781BFA9BAF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0234A3F5-3BAD-BF5D-F93B-7A1CDD40C224" name="Kanaly_tv_Pakiet_tv_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:43:11 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBE13E9A-1249-795F-199C-67CF9F667C93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

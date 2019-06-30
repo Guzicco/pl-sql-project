@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55CC8456-4AE4-D5C3-84DC-2825919C894A" name="Platnosci">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:27:56 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Faktury_Klient_ID" id="29FED90D-3E9F-3E8D-12DB-82F0EA98C6C2">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:28:07 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E8B5B84-0ADB-454D-EC6B-F3CD639AC67C" referredColumn="EEB8F407-D1C3-3476-B98D-EDF354923EF3"/>
+</associations>
+</Column>
+<Column name="Faktury_Rok" id="5927302B-C9F9-24DA-3047-A02F2AE0E136">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:28:07 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E8B5B84-0ADB-454D-EC6B-F3CD639AC67C" referredColumn="079B7223-6DE2-4CB2-1427-1E6122ADF86B"/>
+</associations>
+</Column>
+<Column name="Faktury_Miesiac" id="A0F3F9BB-A161-577C-735F-23E94C93534C">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:28:07 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E8B5B84-0ADB-454D-EC6B-F3CD639AC67C" referredColumn="0BA59362-852D-8C2D-BE81-606B013C9DAF"/>
+</associations>
+</Column>
+<Column name="ID" id="2F4F08AB-207A-8FC9-210D-28A48995C5A1">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:31:54 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kwota_wplacona" id="BDAE75EA-55B3-2C21-62EF-828BB77E6306">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:30:14 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35164504-6D75-7632-D7ED-C854FA24E35A" name="Platnosci_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:28:18 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29FED90D-3E9F-3E8D-12DB-82F0EA98C6C2"/>
+<colUsage columnID="5927302B-C9F9-24DA-3047-A02F2AE0E136"/>
+<colUsage columnID="A0F3F9BB-A161-577C-735F-23E94C93534C"/>
+<colUsage columnID="2F4F08AB-207A-8FC9-210D-28A48995C5A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4549B8A1-C759-44F1-8188-255D1A667E8B" name="Platnosci_Faktury_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:28:07 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5927302B-C9F9-24DA-3047-A02F2AE0E136"/>
+<colUsage columnID="A0F3F9BB-A161-577C-735F-23E94C93534C"/>
+<colUsage columnID="29FED90D-3E9F-3E8D-12DB-82F0EA98C6C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22ABF93D-119A-4234-8926-7C7B38075044" name="Klient">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 16:09:30 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="ACABB0C9-2F5A-CA71-77C4-E0FF465F51BD">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:16:57 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwisko" id="DDC64509-82F7-1A26-1B41-E71DD86DEBC3">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:17:44 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Imie" id="43FA7A56-F80F-A449-7972-EDFE5B45F201">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:17:44 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESEL" id="E3A4F64E-CE49-525F-4432-1C413F0ADBF5">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:18:00 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Miejscowosc" id="AD03B1D1-98E3-1871-11FE-8EC492F922D0">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 11:59:15 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ulica" id="77F3A94D-664F-B6BC-ACB0-174B741AD0D3">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:26:32 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_domu" id="C536DD18-3A1D-FFC9-E525-625A0B289157">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:27:16 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_mieszkania" id="1152AE67-87A5-E29C-50A0-1BAFDB759294">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:27:16 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefon_komorkowy" id="3E60FD12-3741-B09D-589A-DFC28D0554F4">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:44:45 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Uslugi_ID" id="B3A7DEAB-5DCC-19B2-375E-F386BDC65758">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:39:47 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B346A52-3FD2-43C2-2085-8D4440A5D0DB" referredColumn="8878E560-389B-2491-9493-809349DC0905"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29087B7D-DEDD-0E1D-0BA6-25A760CF80FC" name="Klient_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:16:57 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACABB0C9-2F5A-CA71-77C4-E0FF465F51BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7270BCEF-0CAF-E3DC-F582-6BC259768093" name="Klient__UN">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 15:06:34 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3A4F64E-CE49-525F-4432-1C413F0ADBF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F407B1C9-E4B9-07BF-1B9E-A538C1025EEF" name="Klient_Uslugi_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:39:47 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3A7DEAB-5DCC-19B2-375E-F386BDC65758"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

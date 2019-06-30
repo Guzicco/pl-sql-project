@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E8E16C0-FC90-F2FE-8A67-40DC276B93B9" name="Faktury">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:25:12 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Rok" id="079B7223-6DE2-4CB2-1427-1E6122ADF86B">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:25:46 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Miesiac" id="0BA59362-852D-8C2D-BE81-606B013C9DAF">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:27:07 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Klient_ID" id="EEB8F407-D1C3-3476-B98D-EDF354923EF3">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:27:16 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50F4B9D9-BDC6-2C8C-D2FB-11FBC4491444" referredColumn="ACABB0C9-2F5A-CA71-77C4-E0FF465F51BD"/>
+</associations>
+</Column>
+<Column name="Naleznosc" id="F9A21949-FD07-1F09-34F4-0629325FC85F">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:34:43 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Czy_oplacona" id="16356B51-27EE-BD9C-BC0D-401E3297FDFE">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:35:04 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6C498D82-81D9-23D8-8C85-DBE2DEE1583B" name="Faktury_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:25:46 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="079B7223-6DE2-4CB2-1427-1E6122ADF86B"/>
+<colUsage columnID="0BA59362-852D-8C2D-BE81-606B013C9DAF"/>
+<colUsage columnID="EEB8F407-D1C3-3476-B98D-EDF354923EF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1226008-32E1-29B3-CC32-9C14787E5D55" name="Faktury_Klient_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 12:27:16 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEB8F407-D1C3-3476-B98D-EDF354923EF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

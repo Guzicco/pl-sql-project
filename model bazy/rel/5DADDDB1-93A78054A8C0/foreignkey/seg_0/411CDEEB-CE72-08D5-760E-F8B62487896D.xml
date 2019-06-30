@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="411CDEEB-CE72-08D5-760E-F8B62487896D" containerWithKeyObject="2772B7E7-BDF5-6456-19EC-2EA0A6EDFB2C" localFKIndex="0234A3F5-3BAD-BF5D-F93B-7A1CDD40C224" name="Kanaly_tv_Pakiet_tv_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-05-19 17:43:11 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<referredTableLongName>Pakiet_kanalow</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>26FA5B85-F406-3847-B6AB-F3BB305BAB2F</referredTableID>
+<keyObject>7F1E2495-64F3-4AF4-AB82-7C4F4911F9E2</keyObject>
+<referredKeyID>7F1E2495-64F3-4AF4-AB82-7C4F4911F9E2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

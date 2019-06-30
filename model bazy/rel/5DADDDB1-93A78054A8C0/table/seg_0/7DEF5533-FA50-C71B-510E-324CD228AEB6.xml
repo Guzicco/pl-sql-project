@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DEF5533-FA50-C71B-510E-324CD228AEB6" name="Stanowisko">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:52:22 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="57526955-6D60-14B3-F1EC-8DB0ED5F00B2">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:52:45 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="0ECCC812-2E86-AEFA-4634-B32F3E0C15AC">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:52:45 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E2367F0-5215-24A4-A66C-578EAA30E5C4" name="Stanowisko_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 13:52:45 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57526955-6D60-14B3-F1EC-8DB0ED5F00B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

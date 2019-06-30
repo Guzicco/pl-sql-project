@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5A5FF82-6A59-87D5-65E6-C9E33836E281" name="Konto">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:27:49 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5F24006A-1752-136F-BF5D-2F8851D0497F">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:28:36 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="login" id="AC4C458B-1487-5981-0D5D-4A2220CEF47F">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:28:36 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="haslo" id="CC812CB6-F2DB-1340-1812-1619DEB61EBD">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:28:46 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rola_ID" id="3F677096-DF2B-078E-50F3-96E76C361838">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:32:48 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A91F5CBF-B125-1EA0-2315-CA12EC7C0CFF" referredColumn="E7DE46E0-47B1-DCFF-9B4E-86BD0E67229C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00BA3903-FBD5-43D2-31DB-C8FB590D4B13" name="Konto_PK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:28:36 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F24006A-1752-136F-BF5D-2F8851D0497F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0878EFE3-6A03-3C81-E3D7-AD1C4DC04923" name="Konto__UN">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:30:31 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC4C458B-1487-5981-0D5D-4A2220CEF47F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2E82721-3DF5-7AE6-14E2-1F3561233DF1" name="Konto_Rola_FK">
+<createdBy>Michal</createdBy>
+<createdTime>2019-06-23 14:32:48 UTC</createdTime>
+<ownerDesignName>model bazy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F677096-DF2B-078E-50F3-96E76C361838"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
